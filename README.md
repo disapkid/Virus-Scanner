@@ -1,19 +1,24 @@
 # Virus-Scanner
 
-Virus-Scanner is a lightweight, cross-platform C++ project for detecting potentially malicious files based on signature scanning. Built using CMake, it includes support for unit testing and is structured for clean separation of core logic and interfaces.
+Virus-Scanner is a lightweight, cross-platform C++ project for detecting potentially malicious files based on signature scanning.  
+The project demonstrates **multithreaded programming** for parallel file scanning and includes a **custom DLL library** for reusable scanning logic.  
+It is built using **CMake** and is compatible with Windows (Visual Studio), Linux, and macOS.
 
 ---
 
 ## 🔧 Features
 
+- Multithreaded scanning: files and directories are processed in parallel for better performance  
+- Custom DLL library with reusable scanning functions  
 - Scan individual files or whole directories  
-- Use custom or built-in virus/malware signature definitions  
 - Modular design: header files (`include/`), core logic (`app/`), tests (`tests/`)  
-- Built with CMake for easy building on Windows, Linux, and macOS  
+- Built with **CMake** for cross-platform building  
 
 ---
 
 ## 📁 Project Structure
+
+
 ```
 Virus-Scanner/
 ├── app/ ← Core application logic
